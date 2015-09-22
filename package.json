@@ -1,0 +1,45 @@
+{
+  "name": "brreg-cli",
+  "description": "CLI for looking up data from the Norwegian Entity Registry",
+  "version": "1.0.0",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no"
+  },
+  "license": "MIT",
+  "keywords": [
+    "brreg",
+    "cli",
+    "difi",
+    "enhetsregisteret",
+    "norwegian entity registry",
+    "Brønnøysundregistrene"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/brreg-cli.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/brreg-cli/issues"
+  },
+  "bin": {
+    "brreg": "index.js"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "setup": "npm install && node setup.js",
+    "test": "standard && tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "standard": "^5.3.0",
+    "tap": "^1.4.1"
+  },
+  "dependencies": {
+    "brreg": "^0.0.4"
+  }
+}

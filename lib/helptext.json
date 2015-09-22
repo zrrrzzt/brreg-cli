@@ -1,0 +1,10 @@
+[
+  "Usage: ",
+  "",
+  "$ brreg <query>",
+  "",
+  "Optional, specify format of returned data",
+  "Valid options: csv, json, jsonp, xml, yaml (default)",
+  "",
+  "$ brreg <query> --format=<format>"
+]
