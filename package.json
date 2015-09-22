@@ -40,6 +40,6 @@
     "tap": "^1.4.1"
   },
   "dependencies": {
-    "brreg": "^0.0.4"
+    "brreg": "^1.0.0"
   }
 }
