@@ -1,7 +1,7 @@
 {
   "name": "brreg-cli",
   "description": "CLI for looking up data from the Norwegian Entity Registry",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "Geir Gåsodden",
     "email": "geir.gasodden@pythonia.no"
@@ -26,7 +26,7 @@
     "brreg": "index.js"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.6.1"
   },
   "scripts": {
     "setup": "npm install && node setup.js",
