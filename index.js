@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 'use strict'
 
-var brreg = require('brreg')
-var getHelpText = require('./lib/getHelpText')
-var pkg = require('./package.json')
-var query = process.argv[2]
+const brreg = require('brreg')
+const getHelpText = require('./lib/getHelpText')
+const pkg = require('./package.json')
+const query = process.argv[2]
 var format = 'yaml'
 
 if (!query || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
@@ -21,10 +21,10 @@ if (process.argv[3] && (process.argv[3].indexOf('-f') !== -1 || process.argv[3].
   format = process.argv[3].split('=')[1]
 }
 
-brreg({query: query, format: format}, function (err, data) {
-  if (err) {
-    console.error(err)
-  } else {
+brreg({query: query, format: format})
+  .then(data => {
     console.log(data)
-  }
-})
+  })
+  .catch(error => {
+    console.error(error)
+  })
