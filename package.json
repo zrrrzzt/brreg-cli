@@ -41,6 +41,6 @@
     "tap": "8.0.0"
   },
   "dependencies": {
-    "brreg": "2.0.4"
+    "brreg": "2.1.0"
   }
 }
