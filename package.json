@@ -38,7 +38,7 @@
     "coveralls": "2.13.3",
     "nsp": "2.8.1",
     "standard": "8.6.0",
-    "tap": "8.0.0"
+    "tap": "8.0.1"
   },
   "dependencies": {
     "brreg": "2.1.0"
