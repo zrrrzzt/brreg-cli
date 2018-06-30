@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict'
 
 const brreg = require('brreg')
 const getHelpText = require('./lib/getHelpText')

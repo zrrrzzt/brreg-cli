@@ -1,5 +1,3 @@
-'use strict'
-
 var exec = require('child_process').execFile
 var tap = require('tap')
 var getHelpText = require('../../lib/getHelpText')

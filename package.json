@@ -17,22 +17,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/zrrrzzt/brreg-cli.git"
+    "url": "git+https://github.com/zrrrzzt/brreg-cli.git"
   },
   "bugs": {
-    "url": "http://github.com/zrrrzzt/brreg-cli/issues"
+    "url": "https://github.com/zrrrzzt/brreg-cli/issues"
   },
   "bin": {
     "brreg": "index.js"
   },
   "engines": {
-    "node": ">=4.6.2"
+    "node": ">=8.11.3"
   },
   "scripts": {
-    "setup": "npm install && node setup.js",
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
+    "test-offline": "standard && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/**/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls"
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "devDependencies": {
     "coveralls": "3.0.2",
