@@ -41,6 +41,6 @@
     "tap": "12.0.1"
   },
   "dependencies": {
-    "brreg": "3.0.0"
+    "brreg": "3.0.1"
   }
 }
