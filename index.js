@@ -20,7 +20,7 @@ if (process.argv[3] && (process.argv[3].indexOf('-f') !== -1 || process.argv[3].
   format = process.argv[3].split('=')[1]
 }
 
-brreg({query: query, format: format})
+brreg({ query: query, format: format })
   .then(data => {
     console.log(data)
   })
