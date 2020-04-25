@@ -26,7 +26,7 @@
     "brreg": "index.js"
   },
   "engines": {
-    "node": ">=8.15.0"
+    "node": ">=14.0.0"
   },
   "scripts": {
     "test": "standard && npm audit && tap --reporter=spec test/**/*.js",
