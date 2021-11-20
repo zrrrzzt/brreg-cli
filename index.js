@@ -4,7 +4,7 @@ const brreg = require('brreg')
 const getHelpText = require('./lib/getHelpText')
 const pkg = require('./package.json')
 const query = process.argv[2]
-var format = 'yaml'
+let format = 'yaml'
 
 if (!query || process.argv.indexOf('-h') !== -1 || process.argv.indexOf('--help') !== -1) {
   console.log(getHelpText())
