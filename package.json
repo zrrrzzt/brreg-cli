@@ -43,5 +43,8 @@
   },
   "dependencies": {
     "brreg": "5.0.5"
+  },
+  "tap": {
+    "check-coverage": false
   }
 }
