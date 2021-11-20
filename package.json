@@ -42,7 +42,7 @@
     "tap": "15.1.2"
   },
   "dependencies": {
-    "brreg": "5.0.5"
+    "brreg": "5.0.6"
   },
   "tap": {
     "check-coverage": false
